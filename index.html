@@ -6,15 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Viajantes</title>
 		<link rel="stylesheet" href="./assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap-icons/bootstrap-icons.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/bootstrap/bootstrap-icons/bootstrap-icons.css"
+		/>
 		<link rel="stylesheet" href="./assets/css/custom_bootstrap.css" />
 		<link rel="stylesheet" href="./assets/css/navegacao.css" />
 		<link rel="stylesheet" href="conteudo.css" />
 	</head>
 	<body>
-		<div class="conteudo vh-75">
+		<header class="conteudo vh-75">
 			<!-- NAVEGAÇÃO DE CONTATO E AJUDA -->
-			<div class="navegacao-contato container d-flex justify-content-end d-none d-md-block">
+			<div
+				class="navegacao-contato container d-flex justify-content-end d-none d-md-block"
+			>
 				<ul class="nav nav-contato-items py-3 justify-content-end">
 					<li class="nav-item me-2">
 						<a class="nav-link fw-bold text-info" href="#"
@@ -79,7 +84,10 @@
 										</div>
 									</a>
 
-									<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+									<ul
+										class="dropdown-menu dropdown-menu-dark"
+										aria-labelledby="dropdownMenuLink"
+									>
 										<li><a class="dropdown-item" href="#">Perfil</a></li>
 										<li><a class="dropdown-item" href="#">Configurações</a></li>
 										<li><a class="dropdown-item" href="#">Sair</a></li>
@@ -91,9 +99,10 @@
 				</div>
 			</nav>
 			<hr class="divisor" />
-			<main class="container">
-				<div class="jumbotron d-none d-md-block">
-					<div class="titulos my-4 w-50">
+			<div class="boas-vindas container">
+				<!-- Jumbotrom Padrão para telas grandes -->
+				<div class="jumbotron d-none my-4 d-md-block">
+					<div class="titulos w-50">
 						<h1 class="display-5 px-3 titulo-principal fw-normal text-white">
 							Bem vindos(as) futuros(as) <span class="text-destacado">viajantes!</span>
 						</h1>
@@ -103,9 +112,10 @@
 						</h1>
 					</div>
 				</div>
+				<!-- || Jumbotrom Padrão para telas grandes || -->
 				<!-- Jumbotrom Mobile utilizando classes de display do bootstrap para responsividade -->
-				<div class="jumbotron d-block d-md-none">
-					<div class="titulos my-4">
+				<div class="jumbotron my-4 d-block d-md-none">
+					<div class="titulos">
 						<h1 class="display-5 px-3 titulo-principal fw-normal text-white">
 							Bem vindos(as) futuros(as) <span class="text-destacado">viajantes!</span>
 						</h1>
@@ -116,123 +126,162 @@
 					</div>
 					<!-- || Jumbotrom Mobile utilizando classes de display do bootstrap para responsividade || -->
 				</div>
-				<div class="my-1 passagem">
-					<div class="origem">
-						<label for="origem" class="form-label mx-3 text-white"
-							>De onde você quer iniciar sua viagem?</label
-						>
-						<select id="origem" class="form-select" aria-label="Default select example">
-							<option selected>Origem</option>
-							<option value="1">Salvador</option>
-							<option value="2">São Paulo</option>
-							<option value="3">Rio de Janeiro</option>
-							<option value="4">Recife</option>
-						</select>
+				<div class="passagem text-white fw-normal p-3 my-4">
+					<div class="passagem-wraper d-flex">
+						<div class="origem flex-shrink-1 flex-grow-1 flex-wrap">
+							<label for="origem" class="form-label">De onde você vai sair?</label>
+							<select
+								id="origem"
+								class="form-select"
+								aria-label="Default select example"
+							>
+								<option selected>Origem</option>
+								<option value="1">Salvador</option>
+								<option value="2">São Paulo</option>
+								<option value="3">Rio de Janeiro</option>
+								<option value="4">Recife</option>
+							</select>
+						</div>
+						<i
+							class="bi bi-arrow-up-right-square-fill align-self-center mx-3"
+							style="font-size: 2rem"
+						></i>
+						<div class="destino flex-shrink-1 flex-grow-1 flex-wrap">
+							<label for="destino" class="form-label"
+								>Para onde você quer viajar?</label
+							>
+							<select
+								id="destino"
+								class="form-select"
+								aria-label="Default select example"
+							>
+								<option selected>Destino</option>
+								<option value="1">Salvador</option>
+								<option value="2">São Paulo</option>
+								<option value="3">Rio de Janeiro</option>
+								<option value="4">Recife</option>
+							</select>
+						</div>
 					</div>
 				</div>
-				<!-- Carrossel com Pais e Preços -->
-				<div class="carrossel my-4"><h1 class="text-center text-white">Internacional</h1>
-					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="card-wrapper d-flex justify-content-center">
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Portugal</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Canadá</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Estados Unidos</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
+			</div>
+		</header>
+		<main class="container">
+			<!-- Carrossel com Pais e Preços -->
+			<div class="carrossel my-4">
+				<h1 class="text-center">Internacional</h1>
+				<div
+					id="carouselExampleControls"
+					class="carousel slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card-wrapper d-flex flex-wrap justify-content-center">
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Portugal</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card-wrapper d-flex justify-content-center">
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Egito</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Canadá</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Mexico</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-									<div class="card" style="width: 18rem">
-										<img src="..." class="card-img-top" alt="..." />
-										<div class="card-body">
-											<h5 class="card-title">Italia</h5>
-											<p class="card-text">
-												Some quick example text to build on the card title and make up the bulk of
-												the card's content.
-											</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
+								</div>
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Estados Unidos</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button
-							class="carousel-control-prev"
-							type="button"
-							data-bs-target="#carouselExampleControls"
-							data-bs-slide="prev"
-						>
-							<span class="carousel-control-prev-icon botao-carrossel" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button
-							class="carousel-control-next"
-							type="button"
-							data-bs-target="#carouselExampleControls"
-							data-bs-slide="next"
-						>
-							<span class="carousel-control-next-icon botao-carrossel" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+						<div class="carousel-item">
+							<div class="card-wrapper d-flex flex-wrap justify-content-center">
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Egito</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Mexico</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<div class="card" style="width: 18rem">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Italia</h5>
+										<p class="card-text">
+											Some quick example text to build on the card title and make up the
+											bulk of the card's content.
+										</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleControls"
+						data-bs-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon botao-carrossel"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleControls"
+						data-bs-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon botao-carrossel"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<!-- || Carrossel com Pais e Preços || -->
-			</main>
-		</div>
+			</div>
+			<!-- || Carrossel com Pais e Preços || -->
+		</main>
+		<footer class="container-fluid bg-dark vh-25">
 
+		</footer>
 		<!-- JavaScript do Bootstrap -->
 		<script src="./assets/js/bootstrap.bundle.js"></script>
 	</body>
