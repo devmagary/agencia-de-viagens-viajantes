@@ -1,3 +1,7 @@
+body{
+	background-color: #dee2e6;
+}
+
 .botao-carrossel {
 	border-radius: 50%;
 	padding: 1.5rem;
@@ -5,4 +9,11 @@
 }
 .botao-carrossel:hover {
 	outline: 5px double var(--light);
+}
+.logo-footer{
+	width: 53px;
+	height: 53px;
+}
+main{
+	background-color: #ffffffff;
 }

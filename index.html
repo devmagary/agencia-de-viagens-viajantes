@@ -8,14 +8,14 @@
 		<link rel="stylesheet" href="./assets/css/bootstrap.css" />
 		<link
 			rel="stylesheet"
-			href="./assets/bootstrap/bootstrap-icons/bootstrap-icons.css"
+			href="./src/bootstrap-icons/bootstrap-icons.css"
 		/>
 		<link rel="stylesheet" href="./assets/css/custom_bootstrap.css" />
 		<link rel="stylesheet" href="./assets/css/navegacao.css" />
 		<link rel="stylesheet" href="conteudo.css" />
 	</head>
 	<body>
-		<header class="conteudo vh-75">
+		<header class="conteudo pb-5">
 			<!-- NAVEGAÇÃO DE CONTATO E AJUDA -->
 			<div
 				class="navegacao-contato container d-flex justify-content-end d-none d-md-block"
@@ -41,7 +41,9 @@
 			<!-- || NAVEGAÇÃO DE CONTATO E AJUDA || -->
 			<nav class="navbar navbar-expand-md navbar-dark">
 				<div class="container">
-					<a class="navbar-brand" href="#">Viajantes</a>
+					<a class="navbar-brand" href="#"
+						><img src="./src/png/logo-branca.svg" class="viajantes-logo" alt=""
+					/></a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -65,7 +67,7 @@
 								<a class="nav-link" href="#">Promoções</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled">Disabled</a>
+								<a class="nav-link">Contato</a>
 							</li>
 						</ul>
 						<div class="d-flex">
@@ -98,11 +100,11 @@
 					</div>
 				</div>
 			</nav>
-			<hr class="divisor" />
+			<hr class="divisor my-1" />
 			<div class="boas-vindas container">
 				<!-- Jumbotrom Padrão para telas grandes -->
-				<div class="jumbotron d-none my-4 d-md-block">
-					<div class="titulos w-50">
+				<div class="jumbotron d-none my-3 d-md-block">
+					<div class="titulos p-1 w-50">
 						<h1 class="display-5 px-3 titulo-principal fw-normal text-white">
 							Bem vindos(as) futuros(as) <span class="text-destacado">viajantes!</span>
 						</h1>
@@ -114,7 +116,7 @@
 				</div>
 				<!-- || Jumbotrom Padrão para telas grandes || -->
 				<!-- Jumbotrom Mobile utilizando classes de display do bootstrap para responsividade -->
-				<div class="jumbotron my-4 d-block d-md-none">
+				<div class="jumbotron my-3 p-1 d-block d-md-none">
 					<div class="titulos">
 						<h1 class="display-5 px-3 titulo-principal fw-normal text-white">
 							Bem vindos(as) futuros(as) <span class="text-destacado">viajantes!</span>
@@ -126,9 +128,9 @@
 					</div>
 					<!-- || Jumbotrom Mobile utilizando classes de display do bootstrap para responsividade || -->
 				</div>
-				<div class="passagem text-white fw-normal p-3 my-4">
+				<div class="passagem text-white fw-normal p-3">
 					<div class="passagem-wraper d-flex">
-						<div class="origem flex-shrink-1 flex-grow-1 flex-wrap">
+						<div class="origem flex-shrink-1 me-3 flex-grow-1 flex-wrap">
 							<label for="origem" class="form-label">De onde você vai sair?</label>
 							<select
 								id="origem"
@@ -142,10 +144,6 @@
 								<option value="4">Recife</option>
 							</select>
 						</div>
-						<i
-							class="bi bi-arrow-up-right-square-fill align-self-center mx-3"
-							style="font-size: 2rem"
-						></i>
 						<div class="destino flex-shrink-1 flex-grow-1 flex-wrap">
 							<label for="destino" class="form-label"
 								>Para onde você quer viajar?</label
@@ -163,17 +161,27 @@
 							</select>
 						</div>
 					</div>
+					<div class="confirmacao d-flex justify-content-center mt-1">
+						<a href="" class="btn fw-bold btn-outline-primary"
+							>Viajar!
+							<i
+								class="bi bi-arrow-up-right-square-fill"
+								style="font-size: 1.25rem"
+							></i
+						></a>
+					</div>
 				</div>
 			</div>
 		</header>
 		<main class="container">
 			<!-- Carrossel com Pais e Preços -->
-			<div class="carrossel my-4">
-				<h1 class="text-center">Internacional</h1>
+			<div class="carrossel py-4">
+				<h1 class="text-center pb-3">Internacional</h1>
 				<div
 					id="carouselExampleControls"
 					class="carousel slide"
 					data-bs-ride="carousel"
+					data-bs-touch="true"
 				>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -279,8 +287,35 @@
 			</div>
 			<!-- || Carrossel com Pais e Preços || -->
 		</main>
-		<footer class="container-fluid bg-dark vh-25">
-
+		<footer class="container-fluid py-5 bg-dark">
+			<div class="contato-footer container">
+				<div class="contato-wrapper row">
+					<div class="col">
+						<a class="text-info fw-bold text-decoration-none fs-5"  href="#"><img class="logo-footer m-2" src="src/png/logo-laranja.svg" alt="">Viajantes</a>
+						<ul class="list-group">
+							<li class="list-group-item">Site criado por Thauan Silva para avaliação da Recode Pro 2022</li>
+							<li class="list-group-item">Participante do Squad 010</li>
+							<li class="list-group-item">Turma de 2022</li>
+						  </ul>
+					</div>
+					<div class="col">
+						<h1 class="fs-5 text-white">Formas de Pagamento</h1>
+						<div class="banco text-white fs-6"><i class="bi bi-bank me-1" style="font-size: 2rem;"></i>Transferencia Bancaria</div>
+						<div class="banco text-white fs-6"><i class="bi bi-currency-bitcoin me-1" style="font-size: 2rem;"></i></i>Bitcoin</div>
+						<div class="banco text-white fs-6"><i class="bi bi-cash-coin me-1" style="font-size: 2rem;"></i>Dinheiro</div>
+						<div class="banco text-white fs-6"><i class="bi bi-credit-card-2-front-fill me-1" style="font-size: 2rem;"></i>Cartão de Credito</div>
+					</div>
+					<div class="col">
+						<h1 class="fs-5 text-white">Link</h1>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Home</li>
+							<li class="list-group-item">Passagens</li>
+							<li class="list-group-item">Promoção</li>
+							<li class="list-group-item">Contato</li>
+						  </ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<!-- JavaScript do Bootstrap -->
 		<script src="./assets/js/bootstrap.bundle.js"></script>

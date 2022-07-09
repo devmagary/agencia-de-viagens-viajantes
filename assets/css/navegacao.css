@@ -15,6 +15,17 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+.viajantes-logo{
+	width: 53px;
+	height: 53px;
+	transition: all 1s;
+}
+.viajantes-logo:hover{
+	content: url("/src/png/logo-laranja.svg");
+	border-radius: 1rem;
+	border: 1px solid rgba(209, 213, 219, 0.3);
+	background-color: rgba(17, 25, 40, 0.3);
+}
 
 /* Efeito Transparencia e Animação dos Botoes de Contato da NavBAR de contato */
 
@@ -115,7 +126,7 @@
 .titulos {
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-	border: 2px solid rgba(209, 213, 219, 0.3);
+
 }
 .text-destacado {
 	color: var(--primaria);
