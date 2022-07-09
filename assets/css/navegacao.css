@@ -15,13 +15,13 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.viajantes-logo{
+.viajantes-logo {
 	width: 53px;
 	height: 53px;
 	transition: all 1s;
 }
-.viajantes-logo:hover{
-	content: url("/src/png/logo-laranja.svg");
+.viajantes-logo:hover {
+	content: url('/src/png/logo-laranja.svg');
 	border-radius: 1rem;
 	border: 1px solid rgba(209, 213, 219, 0.3);
 	background-color: rgba(17, 25, 40, 0.3);
@@ -126,7 +126,6 @@
 .titulos {
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-
 }
 .text-destacado {
 	color: var(--primaria);
@@ -134,7 +133,7 @@
 .passagem {
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+	border: 1px solid rgba(209, 213, 219, 0.3);
 	outline: 3px solid var(--accent);
 }
 

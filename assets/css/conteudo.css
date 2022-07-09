@@ -1,0 +1,44 @@
+:root {
+	--accent: #e5582d;
+	--primaria: #2dbae5;
+	--light: #c2e9f4;
+}
+
+body {
+	background-color: #dee2e6;
+}
+
+.botao-carrossel {
+	border-radius: 50%;
+	padding: 1.5rem;
+	background-color: var(--primaria);
+}
+.botao-carrossel:hover {
+	outline: 5px double var(--light);
+}
+.logo-footer {
+	width: 53px;
+	height: 53px;
+}
+main {
+	background-color: #ffffffff;
+}
+.titulo-nacional {
+	border: 1px solid var(--light);
+	background-color: rgba(17, 25, 40, 0.5);
+	border-radius: 1rem;
+}
+.custom-card {
+	backdrop-filter: blur(2px) saturate(180%);
+	-webkit-backdrop-filter: blur(2px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 12px;
+	border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.custom-card-b{
+	backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
