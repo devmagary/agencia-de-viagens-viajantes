@@ -10,7 +10,7 @@
 			rgba(0, 0, 0, 0),
 			rgba(0, 0, 0, 0.3) 100%
 		),
-		url('./src/png/Foto_praia.jpg');
+		url('../../src/png/Foto_praia.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
