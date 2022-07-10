@@ -23,6 +23,13 @@ A pagina atualmente conta com:
 - [ ] Função de Cadastro/Consulta de Clientes sem Pseudocódigo
 - [ ] Divulgar o Projeto Finalizado no LinkedIn
 
+### Cores Utilizadas
+
+Primary: #2DBAE5
+
+Light: #c2e9f4
+
+Info: #e5582d
 # Links
 - [LinkedIn](https://www.linkedin.com/in/devmagary/)
 - [Visualizar a Página](https://devmagary.github.io/agencia-de-viagens-viajantes/)
