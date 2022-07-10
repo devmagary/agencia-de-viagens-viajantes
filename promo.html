@@ -36,6 +36,7 @@
 				</ul>
 			</div>
 			<!-- || NAVEGAÇÃO DE CONTATO E AJUDA || -->
+			<!-- NAVEGAÇÃO COM LOGIN LINKS E POPUP DE CONTATO -->
 			<nav class="navbar navbar-expand-md navbar-dark">
 				<div class="container">
 					<a class="navbar-brand" href="./index.html"
@@ -104,23 +105,42 @@
 					</div>
 				</div>
 			</nav>
+			<!-- NAVEGAÇÃO COM LOGIN LINKS E POPUP DE CONTATO -->
 			<hr class="divisor my-1" />
 			<div class="boas-vindas container">
+			<!-- Cards com Destinos e Botões que funcionam com um PoP-Up pra completar a compra -->
 				<div class="cards-destinos">
 					<div class="cards-nacionais py-4">
 						<h1 class="text-center text-primary titulo-nacional p-1 mb-3">
 							Promoções <i class="bi bi-cart-plus-fill"></i>
 						</h1>
-						<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="row row-cols-1 row-cols-md-5 g-4">
 							<div class="col">
 								<div class="card h-100 custom-card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Salvador</h5>
 										<p class="card-text">
-											This is a longer card with supporting text below as a natural lead-in
-											to additional content. This content is a little bit longer.
+											Veja nossas Promoções de viagens para Salvador!
 										</p>
+										<hr />
+										<p class="card-text lh-lg text-center">
+											De <span class="small">R$</span><del class="small">1500</del
+											><span class="d-block">por</span>R$<ins class="fs-3">1250</ins>
+										</p>
+									</div>
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											target="popup"
+											onclick="window.open('./compra.html','popup','width=700,height=700,scrollbars=no,resizable=no'); return false;"
+											class="btn btn-primary"
+										>
+											Viajar!
+											<span class="badge bg-light text-dark"
+												>5 dias / 4 Noites / 2 Pessoas</span
+											>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -129,7 +149,25 @@
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Rio de Janeiro</h5>
-										<p class="card-text">This is a short card.</p>
+										<p class="card-text">Veja nossas Promoções de viagens para o Rio!</p>
+										<hr />
+										<p class="card-text lh-lg text-center">
+											De <span class="small">R$</span><del class="small">1500</del
+											><span class="d-block">por</span>R$<ins class="fs-3">1250</ins>
+										</p>
+									</div>
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											target="popup"
+											onclick="window.open('./compra.html','popup','width=700,height=700,scrollbars=no,resizable=no'); return false;"
+											class="btn btn-primary"
+										>
+											Viajar!
+											<span class="badge bg-light text-dark"
+												>3 dias / 2 Noites / 1 Pessoa</span
+											>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -138,10 +176,25 @@
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Recife</h5>
-										<p class="card-text">
-											This is a longer card with supporting text below as a natural lead-in
-											to additional content.
+										<p class="card-text">Veja nossas Promoções de viagens para Recife!</p>
+										<hr />
+										<p class="card-text lh-lg text-center">
+											De <span class="small">R$</span><del class="small">1500</del
+											><span class="d-block">por</span>R$<ins class="fs-3">1250</ins>
 										</p>
+									</div>
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											target="popup"
+											onclick="window.open('./compra.html','popup','width=700,height=700,scrollbars=no,resizable=no'); return false;"
+											class="btn btn-primary"
+										>
+											Viajar!
+											<span class="badge bg-light text-dark"
+												>4 dias / 3 Noites / 3 Pessoas</span
+											>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -151,9 +204,26 @@
 									<div class="card-body">
 										<h5 class="card-title">São Paulo</h5>
 										<p class="card-text">
-											This is a longer card with supporting text below as a natural lead-in
-											to additional content. This content is a little bit longer.
+											Veja nossas Promoções de viagens para São Paulo!
 										</p>
+										<hr />
+										<p class="card-text lh-lg text-center">
+											De <span class="small">R$</span><del class="small">1500</del
+											><span class="d-block">por</span>R$<ins class="fs-3">1250</ins>
+										</p>
+									</div>
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											target="popup"
+											onclick="window.open('./compra.html','popup','width=700,height=700,scrollbars=no,resizable=no'); return false;"
+											class="btn btn-primary"
+										>
+											Viajar!
+											<span class="badge bg-light text-dark"
+												>6 dias / 5 Noites / 2 Pessoas</span
+											>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -163,17 +233,36 @@
 									<div class="card-body">
 										<h5 class="card-title">Minas Gerais</h5>
 										<p class="card-text">
-											This is a longer card with supporting text below as a natural lead-in
-											to additional content. This content is a little bit longer.
+											Veja nossas Promoções de viagens para Minas Gerais!
 										</p>
+										<hr />
+										<p class="card-text lh-lg text-center">
+											De <span class="small">R$</span><del class="small">1500</del
+											><span class="d-block">por</span>R$<ins class="fs-3">1250</ins>
+										</p>
+									</div>
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											target="popup"
+											onclick="window.open('./compra.html','popup','width=700,height=700,scrollbars=no,resizable=no'); return false;"
+											class="btn btn-primary"
+										>
+											Viajar!
+											<span class="badge bg-light text-dark"
+												>5 dias / 4 Noites / 1 Pessoa</span
+											>
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			<!-- Cards com Destinos e Botões que funcionam com um PoP-Up pra completar a compra -->
 			</div>
 		</header>
+		<!-- Rodapé -->
 		<footer class="container-fluid py-5 bg-dark">
 			<div class="contato-footer container">
 				<div class="contato-wrapper row">
@@ -216,7 +305,7 @@
 					</div>
 					<div class="col">
 						<h1 class="fs-5 text-white">Link</h1>
-						<ul class="list-group list-group-flush">
+						<ul class="list-group">
 							<li class="list-group-item">Home</li>
 							<li class="list-group-item">Passagens</li>
 							<li class="list-group-item">Promoção</li>
@@ -226,6 +315,7 @@
 				</div>
 			</div>
 		</footer>
+		<!-- || Rodapé || -->
 		<script src="./assets/js/bootstrap.bundle.js"></script>
 	</body>
 </html>
