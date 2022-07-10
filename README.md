@@ -30,6 +30,10 @@ Primary: #2DBAE5
 Light: #c2e9f4
 
 Info: #e5582d
+
+Background-light: rgba(255, 255, 255, 0.75);
+
+background-black: rgba(17, 25, 40, 0.75);
 # Links
 - [LinkedIn](https://www.linkedin.com/in/devmagary/)
 - [Visualizar a Página](https://devmagary.github.io/agencia-de-viagens-viajantes/)
