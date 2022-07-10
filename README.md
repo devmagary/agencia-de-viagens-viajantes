@@ -17,6 +17,12 @@ A pagina atualmente conta com:
 - Conta com Paginas de Contato e Venda de Passagens em formato Pop-UP (Sujeito a Mudanças para Modal)
 - Feita totalmente em HTML, CSS, JS e BootStrap
 
+### Futuro
+
+- [ ] Implementar as proximas linguagens durante o aprendizado na Recode dentro do possivel.
+- [ ] Função de Cadastro/Consulta de Clientes sem Pseudocódigo
+- [ ] Divulgar o Projeto Finalizado no LinkedIn
+
 # Links
 - [LinkedIn](https://www.linkedin.com/in/devmagary/)
 - [Visualizar a Página](https://devmagary.github.io/agencia-de-viagens-viajantes/)
