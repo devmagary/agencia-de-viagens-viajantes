@@ -13,6 +13,7 @@
 		url('../../src/png/Foto_praia.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 
 }
 .viajantes-logo {
