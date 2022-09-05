@@ -20,7 +20,7 @@ A pagina atualmente conta com:
 ### Futuro
 
 - [ ] Implementar as proximas linguagens durante o aprendizado na Recode dentro do possivel.
-- [ ] Função de Cadastro/Consulta de Clientes sem Pseudocódigo
+- [X] Função de Cadastro/Consulta de Clientes sem Pseudocódigo
 - [ ] Divulgar o Projeto Finalizado no LinkedIn
 
 ### Cores Utilizadas
@@ -36,7 +36,7 @@ Background-light: rgba(255, 255, 255, 0.75);
 background-black: rgba(17, 25, 40, 0.75);
 
 # Links
-
+- [Java UML](https://lucid.app/lucidchart/b51bd221-22d2-4bf1-94a0-42457c4ea27e/edit?viewport_loc=-11%2C-144%2C2219%2C1055%2C0_0&invitationId=inv_bf4e3a21-ea1a-4a5b-89b2-714cb23153be#)
 - [LinkedIn](https://www.linkedin.com/in/devmagary/)
 - [Visualizar a Página](https://devmagary.github.io/agencia-de-viagens-viajantes/)
 - [PseudoCodigo de Cadastro/Consulta de Clientes]()
