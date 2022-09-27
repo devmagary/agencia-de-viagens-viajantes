@@ -42,8 +42,8 @@ export default function Home() {
                             <td>{viajante.data_viagem_ida}</td>
                             <td>{viajante.data_viagem_volta}</td>
                             <td>{viajante.id_local}</td>
-                            <td><Link to={`/view/${viajante.id}`} className="btn btn-outline-success mx-1">Ver</Link></td>
-                            <td><Link to={`/edit/${viajante.id}`} className="btn btn-warning mx-1">Editar Passageiro</Link></td>
+                            <td><Link to={`/view/${viajante.id_viajante}`} className="btn btn-outline-success mx-1">Ver</Link></td>
+                            <td><Link to={`/edit/${viajante.id_viajante}`} className="btn btn-warning mx-1">Editar Passageiro</Link></td>
                             <td><button className="btn btn-danger mx-1">Adeus Passageiro</button></td>
                         </tr>                        
                         ))}
