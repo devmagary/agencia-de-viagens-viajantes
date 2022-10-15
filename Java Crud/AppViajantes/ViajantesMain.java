@@ -2,8 +2,9 @@ package AppViajantes;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import Crud_Viajantes.Viajante;
-import ViajantesMolde.ViajantesMolde;
+
+import viajanteDAO.ViajantesDAO;
+import viajanteModel.Viajante;
 
 public class ViajantesMain {
 	static int id_viajante = 1;
@@ -13,12 +14,15 @@ public class ViajantesMain {
 	static Scanner entrarUpdate = new Scanner(System.in);
 	static Scanner entrarMenu = new Scanner(System.in);
 	static Scanner entrarDelete = new Scanner(System.in);
+	
 	static void registro() throws Exception {
-		ViajantesMolde viajanteMolde = new ViajantesMolde();
+		
+		ViajantesDAO viajanteMolde = new ViajantesDAO();
 		Viajante viajante1 = new Viajante();		
 		System.out.println("Informe o seu Nome: ");
 		String nome = entrarRegistro.nextLine();
 		viajante1.setNome(nome);
+		entrarRegistro = new Scanner(System.in);
 		System.out.println("Informe Local de Destino - (1) Rio de Janeiro | R$ 500 - (2) São Paulo | R$ 532 - (3) Salvador | R$ 1232 - (4) Recife | R$ 5343 : ");
 		int id_local = entrarRegistro.nextInt();
 		switch (id_local) {
@@ -41,14 +45,16 @@ public class ViajantesMain {
 			
 		}
 		
+		entrarRegistro = new Scanner(System.in);
 		System.out.println("Informe a Data de Ida: (ex: 22/12/2023)");
 		Date dataIda = df.parse(entrarRegistro.next());
 		viajante1.setData_viagem_ida(dataIda);
+		entrarRegistro = new Scanner(System.in);
 		System.out.println("Informe a Data de Volta: (ex: 01/02/2024)");
 		Date dataVolta = df.parse(entrarRegistro.next());
 		viajante1.setData_viagem_volta(dataVolta);
-		viajante1.setId_viajante(id_viajante);
 		viajanteMolde.salvar(viajante1);
+		entrarRegistro = new Scanner(System.in);
 		System.out.println("Quer cadastrar outro? 1 - Para sim e 2 - Para voltar ao menu");
 		int menu = entrarRegistro.nextInt();
 		switch (menu) {
@@ -63,8 +69,10 @@ public class ViajantesMain {
 		
 		
 	}
+	
 	static void listar() throws Exception {
-		ViajantesMolde viajanteMolde = new ViajantesMolde();
+		
+		ViajantesDAO viajanteMolde = new ViajantesDAO();
 		
 		
 		for (Viajante v : viajanteMolde.getViajante()) {
@@ -80,18 +88,24 @@ public class ViajantesMain {
 		menu();
 	}
 	static void update() throws Exception {
+		
 		Viajante viajanteUpdate = new Viajante();
-		ViajantesMolde atualizacao = new ViajantesMolde();
+		ViajantesDAO atualizacao = new ViajantesDAO();
 		System.out.println("Informe o seu Nome: ");
+		entrarUpdate = new Scanner(System.in);
 		viajanteUpdate.setNome(entrarUpdate.nextLine());
+		entrarUpdate = new Scanner(System.in);
 		System.out.println("Informe a Data de Ida: (ex: 22/12/2023)");
 		Date dataNova_ida = df.parse(entrarUpdate.next());
 		viajanteUpdate.setData_viagem_ida(dataNova_ida);
+		entrarUpdate = new Scanner(System.in);
 		System.out.println("Informe a Data de Volta: (ex: 22/12/2023)");
 		Date dataNova_volta = df.parse(entrarUpdate.next());
 		viajanteUpdate.setData_viagem_volta(dataNova_volta);
+		entrarUpdate = new Scanner(System.in);
 		System.out.println("Informe Local de Destino - (1) Rio de Janeiro | R$ 500 - (2) São Paulo | R$ 532 - (3) Salvador | R$ 1232 - (4) Recife | R$ 5343 : ");
 		int id_local = entrarUpdate.nextInt();
+		
 		switch (id_local) {
 		case 1:
 			System.out.println("Rio de Janeiro Selecionado");
@@ -110,28 +124,38 @@ public class ViajantesMain {
 			viajanteUpdate.setId_local(id_local);
 			break;
 		}
+		
+		entrarUpdate = new Scanner(System.in);
 		System.out.println("Informe o seu ID: ");
 		int id_novo = entrarUpdate.nextInt();
 		viajanteUpdate.setId_viajante(id_novo);
 		atualizacao.update(viajanteUpdate);
 		System.out.println("Atualizado com Sucesso");
+		
 		menu();
+		
 	}
 	static void delete() throws Exception {
-		ViajantesMolde delete = new ViajantesMolde();
+		
+		ViajantesDAO delete = new ViajantesDAO();
+		entrarDelete = new Scanner(System.in);
 		System.out.println("Qual usuario você quer deleta? Selecione o Id do Viajante");
 		int id_viajante_id = entrarDelete.nextInt();
 		delete.delete(id_viajante_id);
 		System.out.println("Usuario "+ id_viajante_id + " deletado com sucesso");
+		
 		menu();
 	}
 	static void menu() throws Exception {
+		
 		System.out.println("============= Bem vindo(a) a Agencia de Viagens =============");
 		System.out.println("Selecione uma das opções:");
 		System.out.println("1) Para fazer um Registro");
 		System.out.println("2) Atualizar Cadastro");
 		System.out.println("3) Para visualisar nossos Cadastros");
 		System.out.println("4) Para Deletar um Cadastro");
+		entrarMenu = new Scanner(System.in);
+
 		int menu = entrarMenu.nextInt();
 		switch (menu) {
 		case 1:
@@ -155,6 +179,7 @@ public class ViajantesMain {
 	}
 	
 	public static void main(String[] args) throws Exception {
+		
 		menu();
 
 	}

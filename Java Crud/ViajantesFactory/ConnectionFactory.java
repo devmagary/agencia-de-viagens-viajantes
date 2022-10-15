@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 
 public class ConnectionFactory {
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "asnaebe747As.";
-	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/viajantes";
+	private static final String PASSWORD = "";
+	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/viajantes_1";
 
 	public static Connection createConnectionToMySQL() throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");

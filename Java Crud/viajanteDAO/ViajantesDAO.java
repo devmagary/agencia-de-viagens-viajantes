@@ -1,4 +1,4 @@
-package ViajantesMolde;
+package viajanteDAO;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -8,17 +8,19 @@ import java.util.List;
 
 import com.mysql.cj.jdbc.ClientPreparedStatement;
 
-import Crud_Viajantes.Viajante;
 import ViajantesFactory.ConnectionFactory;
+import viajanteModel.Viajante;
 
 
-public class ViajantesMolde {
+public class ViajantesDAO {
 
+	//UPDATE E INSERT DE TABELAS *UPDATE PARA INSERIR O ID_LOCAL*
+	
 	public void salvar(Viajante viajante) {
 		int id_local = viajante.getId_local();
 		int id_viajante = viajante.getId_viajante();
 		String sql = "INSERT INTO viajante(id_viajante, nome, data_viagem_ida, data_viagem_volta) VALUES (?, ?, ?, ?)";
-		String sql2 = "UPDATE `viajantes`.`viajante` SET `id_local` = "+id_local+" WHERE (`id_viajante` = "+id_viajante+")";
+		String sql2 = "UPDATE `viajantes_1`.`viajante` SET `id_local` = "+id_local+" WHERE (`id_viajante` = "+id_viajante+")";
 		Connection conn = null;
 		ClientPreparedStatement pstm = null;
 		ClientPreparedStatement pstm2 = null;
@@ -54,7 +56,9 @@ public class ViajantesMolde {
 		}
 		
 	}
-
+	
+//LISTAGEM COM INNER JOIN PARA A RELAÇÃO ENTRE AS TABELAS VIAJANTE E LOCAIS!!!!
+	
 	public List<Viajante> getViajante(){
 		String sql = "select * From viajante a "+
 	"join locais b "+
@@ -99,7 +103,8 @@ public class ViajantesMolde {
 				return viajante;
 				}
 			
-
+//UPDATE POR ID
+	
 	public void update (Viajante viajante) {
 		String sql = "UPDATE viajante SET nome = ?, data_viagem_ida = ?, data_viagem_volta = ?, id_local = ? "+
 	"WHERE id_viajante = ?";
@@ -130,6 +135,8 @@ public class ViajantesMolde {
 			}
 		}
 	}
+	
+	//DELETE POR ID
 	public void delete(int id_viajante) {
 		String sql = "DELETE FROM viajante WHERE id_viajante = ?";
 		Connection conn = null;

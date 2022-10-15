@@ -1,4 +1,4 @@
-package Crud_Viajantes;
+package viajanteModel;
 
 import java.util.Date;
 
