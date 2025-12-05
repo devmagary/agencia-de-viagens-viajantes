@@ -1,0 +1,16 @@
+$primaria: #2DBAE5;
+$secundaria: #c2e9f4;
+$acent: #e5582d;
+
+$primary: $primaria;
+$light: $secundaria;
+$info: $acent;
+
+$utilities: (
+    "viewport-height": (
+      property: height,
+      class: vh,
+      values: (100: 100vh, 75: 75vh, 50: 50vh, 25: 25vh, 10: 10vh),
+));
+
+@import "../bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,7 @@
+Primario: #2DBAE5
+light: #c2e9f4
+accent: #e5582d
+
+
+Alfabetizar
+#198754

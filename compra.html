@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="./src/bootstrap-icons/bootstrap-icons.css" />
+	<link rel="stylesheet" href="./assets/css/custom_bootstrap.css" />
+	<link rel="stylesheet" href="./assets/css/conteudo.css" />
+	<title>Comprando</title>
+</head>
+
+<body>
+	<main class="container mt-4 p-4 custom-card">
+		<form>
+			<div class="mb-3">
+				<label for="nome" class="form-label">Nome</label>
+				<input type="text" class="form-control form-control-lg" id="nome" aria-describedby="Nome" />
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
+				<input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+					aria-describedby="emailHelp" />
+			</div>
+			<div class="mb-3">
+				<label for="metodos-pagamento" class="form-label">Formas de Pagamento</label>
+				<select class="form-select form-select-lg" id="metodos-pagamento" aria-label="Seleção de Pagamento">
+					<option selected>Selecione uma Forma de Pagamento</option>
+					<option value="1">Cartão de Crédito</option>
+					<option value="2">Bitcoin</option>
+					<option value="3">Dinheiro</option>
+					<option value="4">Transferencia Bancaria</option>
+				</select>
+			</div>
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+				<label class="form-check-label" for="exampleCheck1">Lembrar forma de Pagamento</label>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Senha</label>
+				<input type="password" class="form-control form-control-lg" id="exampleInputPassword1" />
+			</div>
+			<button type="submit" class="btn mb-3 btn-lg btn-primary shadow-sm fw-bold px-5">Comprar</button>
+		</form>
+	</main>
+	<script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

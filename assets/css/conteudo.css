@@ -1,0 +1,117 @@
+:root {
+	--accent: #e5582d;
+	--primaria: #2dbae5;
+	--light: #c2e9f4;
+}
+
+body {
+	background-color: #dee2e6;
+	overflow-x: hidden;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+main {
+	background-color: #ffffffff;
+	animation: fadeInUp 0.8s ease-out;
+}
+
+.botao-carrossel {
+	border-radius: 50%;
+	padding: 1.5rem;
+	background-color: var(--primaria);
+	transition: all 0.3s ease;
+}
+
+.botao-carrossel:hover {
+	outline: 5px double var(--light);
+	transform: scale(1.1);
+}
+
+.logo-footer {
+	width: 53px;
+	height: 53px;
+}
+
+.titulo-nacional {
+	border: 1px solid var(--light);
+	background-color: rgba(17, 25, 40, 0.5);
+	border-radius: 1rem;
+}
+
+/* Enhanced Cards */
+.custom-card {
+	backdrop-filter: blur(2px) saturate(180%);
+	-webkit-backdrop-filter: blur(2px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 12px;
+	border: 1px solid rgba(209, 213, 219, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card-b {
+	backdrop-filter: blur(2px) saturate(180%);
+	-webkit-backdrop-filter: blur(2px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.75);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-b:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card .card-footer,
+.custom-card-b .card-footer {
+	background-color: transparent;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.custom-card img,
+.custom-card-b img {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+/* Typography Improvements */
+.card-text {
+	line-height: 1.6;
+	color: #4a4a4a;
+}
+
+.custom-card-b .card-text {
+	color: #e0e0e0;
+	/* Lighter text for dark cards */
+}
+
+/* Button Enhancements */
+.btn {
+	transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-indicators {
+	bottom: -45px;
+}

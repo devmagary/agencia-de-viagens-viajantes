@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Viajantes - Destinos</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="./src/bootstrap-icons/bootstrap-icons.css" />
+	<link rel="stylesheet" href="./assets/css/custom_bootstrap.css" />
+	<link rel="stylesheet" href="./assets/css/navegacao.css" />
+	<link rel="stylesheet" href="./assets/css/conteudo.css" />
+</head>
+
+<body>
+	<header class="conteudo pb-5">
+		<!-- NAVEGAÇÃO DE CONTATO E AJUDA -->
+		<div class="navegacao-contato container d-flex justify-content-end d-none d-md-block">
+			<ul class="nav nav-contato-items py-3 justify-content-end">
+				<li class="nav-item me-2">
+					<a class="nav-link fw-bold text-info" href="#"><i class="bi bi-headset"></i> Central de
+						Atendimento</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fw-bold" href="#"><i class="bi bi-ear-fill"></i> Central de Ouvidoria</a>
+				</li>
+				<li class="nav-item ms-5">
+					<a class="nav-link fw-bold" href="#"><i class="bi bi-question-circle"></i> Precisa de Ajuda</a>
+				</li>
+			</ul>
+		</div>
+		<!-- || NAVEGAÇÃO DE CONTATO E AJUDA || -->
+		<!-- NAVEGAÇÃO COM LOGIN LINKS E POPUP DE CONTATO -->
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="./index.html"><img src="./src/png/logo-branca.svg" class="viajantes-logo"
+						alt="" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav navbar-principal me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link barra active" href="./destinos.html">Destinos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./promo.html">Promoções</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contato.html" target="popup"
+								onclick="window.open('./contato.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;">
+								Contato</a>
+						</li>
+					</ul>
+					<div class="d-flex">
+						<div class="login-user">
+							<div class="dropdown login-items">
+								<a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<div class="d-flex align-items-center text-white">
+										<i class="bi bi-person-circle" style="font-size: 2rem"></i>
+										<span class="ms-1">"Usuario"</span>
+									</div>
+								</a>
+
+								<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+									<li><a class="dropdown-item" href="#">Perfil</a></li>
+									<li><a class="dropdown-item" href="#">Configurações</a></li>
+									<li><a class="dropdown-item" href="#">Sair</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- || NAVEGAÇÃO COM LOGIN LINKS E POPUP DE CONTATO || -->
+		<hr class="divisor my-1" />
+		<div class="boas-vindas container">
+			<!-- Jumbotrom -->
+			<div class="jumbotron my-3">
+				<div class="titulos p-4 w-75 mx-auto"> <!-- Padding CSS e centralização -->
+					<h1 class="display-6 text-center px-3 titulo-principal fw-normal text-white">
+						Faça pela Viajantes sua viagem dos sonhos
+						<span class="text-destacado">viajantes!</span>
+					</h1>
+					<h1 class="display-6 px-3 text-center text-white titulo-secundario fw-normal">
+						Veja nossos destinos <span class="text-destacado">Internacionais</span> e
+						<span class="text-destacado">Nacionais.</span>
+					</h1>
+				</div>
+				<!-- || Jumbotrom || -->
+			</div>
+			<!-- Cards de destino -->
+			<div class="cards-destinos">
+				<div class="cards-nacionais py-4">
+					<h1 class="text-center text-primary titulo-nacional p-1 mb-3">
+						Destinos Nacionais <i class="bi bi-flag-fill"></i>
+					</h1>
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="col">
+							<div class="card h-100 custom-card">
+								<img src="./src/png/salvador.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Salvador</h5>
+									<p class="card-text">
+										Terra de todos os santos, Salvador encanta turistas do mundo inteiro
+										com a intensa atividade cultural, as belas praias, museus e
+										construções seculares. O turismo em Salvador é eclético e agrada a
+										todos os públicos, dos amantes da natureza a quem quer descobrir mais
+										sobre a história do País. Salvador é onde você vai se divertir muito,
+										porque a cidade tem entretenimento o ano inteiro.
+									</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><a
+											class="btn btn-info text-white fw-bold shadow-sm d-block"
+											href="./promo.html">Veja Preços</a></small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 custom-card">
+								<img src="./src/png/rio-de-janeiro.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Rio de Janeiro</h5>
+									<p class="card-text">
+										Cidade Maravilhosa, exaltada em canções por suas belezas naturais, o
+										Rio de Janeiro tem atrações mundialmente famosas e que atraem milhões
+										de turistas do Brasil e do exterior. A bela combinação de serra, mar
+										e cidade é um dos encantos locais e que fazem o visual único do Rio.
+										Conheça as belas praias de Copacabana e Ipanema, além da Baía de
+										Guanabara.
+									</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><a class="btn btn-info d-block" href="./promo.html">Veja
+											Preços</a></small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 custom-card">
+								<img src="./src/png/recife.jpeg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Recife</h5>
+									<p class="card-text">
+										Capital de Pernambuco e uma importante cidade do Nordeste, Recife tem
+										diversas belezas naturais, cultura, excelente gastronomia e um
+										conjunto arquitetônico lindo. Conhecida como “Veneza Brasileira”
+										devido aos rios que cortam a cidade, é uma metrópole que nunca perdeu
+										o clima de vila de pescadores, com tradições preservadas em seu
+										centro histórico.
+									</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><a class="btn btn-info d-block" href="./promo.html">Veja
+											Preços</a></small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 custom-card">
+								<img src="./src/png/saopaulo.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">São Paulo</h5>
+									<p class="card-text">
+										Maior metrópole do Brasil, São Paulo é o destino certo para quem
+										procura por diversão, gastronomia variada, eventos culturais,
+										esportivos e compras. O turismo em São Paulo é vibrante e exige muita
+										disposição, já que é impossível conhecer toda a cidade em apenas um
+										dia. Além de monumentos, museus, teatros e parques, em São Paulo você
+										terá a disposição milhares de restaurantes e bares, especializados na
+										culinária de vários países do mundo.
+									</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><a
+											class="btn btn-info text-white fw-bold shadow-sm d-block"
+											href="./promo.html">Veja
+											Preços</a></small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 custom-card">
+								<img src="./src/png/minas.jpeg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Minas Gerais</h5>
+									<p class="card-text">
+										Pão de queijo, cidades históricas, minas de ouro, trilhas com
+										cachoeiras… São muitos os motivos para visitar Minas Gerais, o Estado
+										com maior número de municípios do Brasil. São mais de 850! Não à toa,
+										o escritor mineiro Guimarães Rosa dizia que “Minas são muitas”.
+										Difícil escolher o que visitar com toda essa riqueza gastronômica,
+										cultural e natural.
+									</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><a
+											class="btn btn-info text-white fw-bold shadow-sm d-block"
+											href="./promo.html">Veja
+											Preços</a></small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- || Cards de destino || -->
+		</div>
+	</header>
+	<main class="container">
+		<!-- Destinos Internacionais -->
+		<div class="cards-internacionais py-5 text-white">
+			<h1 class="text-center text-primary titulo-nacional p-1 mb-3">
+				Destinos Internacionais <i class="bi bi-flag"></i>
+			</h1>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/torre_belem.jpg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Portugal</h5>
+							<p class="card-text">
+								Na Península Ibérica conheça Portugal, sua arquitetura que remonta aos
+								séculos XVI a XIX e as praias do Algarve são atrativos para aqueles que
+								viajam em busca de cultura e descanso em paisagens incríveis.
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/canada.jpg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Canadá</h5>
+							<p class="card-text">
+								Detentor de paisagens únicas com as belas geleiras, florestas boreal,
+								litorais dramáticos, pradarias sem fim e a maior coleção de lagos
+								coloridos de água doce do mundo, o Canadá é um destino perfeito para
+								apaixonados pela natureza e pelo clima mais frio e aconchegante.
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/eua.jpg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Estados Unidos</h5>
+							<p class="card-text">
+								É um destino de para todos os gostos: opções de turismo natural como
+								praias, montanhas, lagos, desertos e neve; juntamente com grandes
+								opções urbanas como os cassinos de Las Vegas e toda efervescência
+								cultural e artística de Nova York.
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/egito2.jpg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Egito</h5>
+							<p class="card-text">
+								Ir ao Egito é uma verdadeira viagem ao tempo, repleto de sítios
+								arqueológicos e monumentos construídos a milênios atrás, esse destino
+								garante ao viajante muita aprendizagem e aventuras!
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/mexico.jpg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Mexico</h5>
+							<p class="card-text">
+								Com resorts em praias paradisíacas como Cancún, Isla Mujeres e
+								Acapulco, e uma vasta experiência histórico cultural sobre civilizações
+								antigas, colonização nas Américas e as touradas; o México encanta a
+								todos os visitantes.
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 custom-card-b">
+						<img src="./src/png/italia.jpeg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Itália</h5>
+							<p class="card-text">
+								As suas origens clássicas e tradições musical, literária, arquitetônica
+								e artística, além da maravilhosa culinária e toda a cultura que emerge
+								da Itália faz com que esse destino seja um dos mais visitados da
+								Europa.
+							</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted"><a class="btn btn-primary d-block" href="./promo.html">Veja
+									Preços</a></small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- || Destinos Internacionais || -->
+	</main>
+	<!-- Rodapé -->
+	<footer class="container-fluid py-5 bg-dark">
+		<div class="contato-footer container">
+			<div class="contato-wrapper row">
+				<div class="col">
+					<a class="text-info fw-bold text-decoration-none fs-5" href="#"><img class="logo-footer m-2"
+							src="src/png/logo-laranja.svg" alt="" />Viajantes</a>
+					<ul class="list-group">
+						<li class="list-group-item">
+							Site criado por Thauan Silva para avaliação da Recode Pro 2022
+						</li>
+						<li class="list-group-item">Participante do Squad 010</li>
+						<li class="list-group-item">Turma de 2022</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1 class="fs-5 text-white">Formas de Pagamento</h1>
+					<div class="banco text-white fs-6">
+						<i class="bi bi-bank me-1" style="font-size: 2rem"></i>Transferencia
+						Bancaria
+					</div>
+					<div class="banco text-white fs-6">
+						<i class="bi bi-currency-bitcoin me-1" style="font-size: 2rem"></i>Bitcoin
+					</div>
+					<div class="banco text-white fs-6">
+						<i class="bi bi-cash-coin me-1" style="font-size: 2rem"></i>Dinheiro
+					</div>
+					<div class="banco text-white fs-6">
+						<i class="bi bi-credit-card-2-front-fill me-1" style="font-size: 2rem"></i>Cartão de Credito
+					</div>
+				</div>
+				<div class="col">
+					<h1 class="fs-5 text-white">Link</h1>
+					<ul class="list-group">
+						<a href="#" class="list-group-item">Home</a>
+						<a href="./destinos.html" class="list-group-item">Destinos</a>
+						<a href="./promo.html" class="list-group-item">Promoções</a>
+						<a href="./contato.html" target="popup"
+							onclick="window.open('./contato.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+							class="list-group-item">Contato</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- || Rodapé || -->
+	<script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
